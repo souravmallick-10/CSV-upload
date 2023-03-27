@@ -1,0 +1,128 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+main{
+	background: rgb(44, 44, 182);
+	box-shadow: 0px 0px 8px 1px lightblue; 
+}
+
+.h1-style{
+	font-size: 2rem;
+	font-family: sans-serif;
+	font-weight: 20;
+	color: white;
+}
+
+form{
+	margin-bottom: 1.5rem;
+}
+
+input{
+	color: black;
+	text-align: center;
+	font-family: unset;
+	border: none;
+	background: #efefef;
+}
+
+.submit-button{
+	background: #d42b2b;
+	color: white;
+	font-size: 1.1rem;
+	border: none;
+}
+
+hr{
+	color: rgb(255, 255, 255);
+}
+
+.form-desc{
+	margin-top: 1rem;
+	font-weight: bold;
+	color: rgb(232, 29, 29);
+	font-family: sans-serif;
+	font-size: 1rem;
+}
+
+#files-container{
+	width: 30%;
+	height: 40%;
+	overflow: auto;
+}
+
+.file{
+	width: 90%;
+	height: 20%;
+	background: rgb(1, 1, 87);
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.file-name{
+	color: rgba(211, 211, 211, 0.841);
+	width: 75%;
+}
+
+.file-open-button{
+	background: blue;
+	width: 3rem;
+	text-align: center;
+}
+
+.file-open-button:hover{
+	opacity: 0.5;
+}
+
+.file-open-button a{
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 0.8rem;
+}
+
+.file a{
+	text-decoration: none;
+	color: lightgrey;
+	margin-top: 0.1rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width:600px) {
+	html{
+		font-size: 9px;
+	}
+	main{
+	    height: 80%;
+	    width: 90%;
+	    top: 5%;
+	    left: 5%;
+	}
+	#files-container{
+		width: 80%;
+	}
+	.file{
+		width: 90%;
+		height: 15%;
+		padding: 1.2rem;
+	}
+	.file-open-button a{
+		font-size: 0.8rem;
+	}
+
+	.file-open-button{
+		width: 3rem;
+		height: 2rem;
+		padding-top: 0.2rem;
+	}
+	.h1-style{
+		margin-top: 1rem;
+	}
+}
